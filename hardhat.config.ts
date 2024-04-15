@@ -1,5 +1,6 @@
 import { HardhatUserConfig } from "hardhat/config";
 import "@nomicfoundation/hardhat-toolbox";
+import "@openzeppelin/hardhat-upgrades";
 import "dotenv/config";
 const config: HardhatUserConfig = {
   solidity: {
@@ -24,11 +25,18 @@ const config: HardhatUserConfig = {
       accounts: [process.env.PRIVATE_KEY as string],
       gasPrice: "auto",
     },
+    sepolia: {
+      url: process.env.SEPOLIA_URL,
+      chainId: 11155111,
+      accounts: [process.env.PRIVATE_KEY as string],
+      gasPrice: "auto",
+    },
   },
 
   etherscan: {
     apiKey: {
       polygonAmoy: process.env.OKLINK_AMOY_API as string,
+      sepolia: process.env.SEPOLIA_API_KEY as string,
     },
     customChains: [
       {

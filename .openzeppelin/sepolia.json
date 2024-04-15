@@ -1,0 +1,126 @@
+{
+  "manifestVersion": "3.2",
+  "proxies": [
+    {
+      "address": "0xFbFe1BDFe13624B153B9590d7a19c4E4A53B1D04",
+      "txHash": "0xd725837a7c54928c1bd5e5496b9b2d1c9bbc4ad6721a6dc963ce75c3171f907c",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x9CBa4f02F33A9e79052d422B3C9526B407d96A93",
+      "txHash": "0x81c3625f71b8d7929eb2de38d6371c088b62714cf7d99369ce7ea9afff2c404d",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x1891C70F22c96Da993A073308FC96c302CCA4093",
+      "txHash": "0x605690beee83345a362e43b605a1aa7c65b0a690f79464ec61e16aa8b8c1d44b",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x266cd7890184A012692803422532370a867739EA",
+      "txHash": "0xc0e18818130e05c4215c711e1a4870c8234fb9eaac8fb18dc5cf486ce3ed2380",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x5c282DA873A9f87C702d39CfdF12cAe2deC9eFD2",
+      "txHash": "0x47df7335f1760a91ddb8f77970244cd31d581cbb619d01bdb22f4a0abbb9b503",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x0765CD8d378B92742588026953BC4829de9BC087",
+      "txHash": "0x0fb25290bff8b169f9337473085bb8ed75de0642d1efa66c1dc33870eb3ad63c",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x4b4B222A1643c15D07FA476e1a478d09a85A51a4",
+      "txHash": "0x7ce19be859d94d43882ba5cbfd0f80339038926e0b7f119d060814e88c3ba6d0",
+      "kind": "transparent"
+    },
+    {
+      "address": "0xCD44537Bf980E92067120821DF326739733E1Bd3",
+      "txHash": "0x483652cbdc44b8a09e2c57fe5fd389e139dce132396470a438204ed592ba8166",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x72FDdEFc9aB1DDe0FaBE656a0B26CEd1382b1369",
+      "txHash": "0x18a946a644a3766d75586d631507b678a27f923e4716decd899b6efda4152310",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x8F2cb40F68d35b81D8bC681E65Ce2BF7AeB95727",
+      "txHash": "0xd5fae92b7ddcada71fb07a7e7599221f703c6bf8ced233757b252cb8814b5612",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x0D645Bcc98ac70e8038AeF35B33fC431F3c06455",
+      "txHash": "0xcdaa3825671b8401d31820c358707445c7080874569a5fa304b67a38e12ada45",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x8f692C3EcBE9c54f9B2387c8c9219BB1AFF28AE7",
+      "txHash": "0x26e0885f6a0769a268d8d07de60bdb5e1000f034547d564fda0d40f22b8ad9b0",
+      "kind": "transparent"
+    },
+    {
+      "address": "0xC019141903889221593C1A81ee4B6A7437ac0dBA",
+      "txHash": "0x57d00dad5969636ff8c0e775f9f1e1e78b1ee30fef4fdbc32aaf6bb3f15e6695",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x0f48fc75482C3Ef38E74dfE9acD6388b40102A26",
+      "txHash": "0x42be0a7dd177c31d6aa1fe68f158fbc80b6e6fc07343fed9f095a20576bcb47c",
+      "kind": "transparent"
+    }
+  ],
+  "impls": {
+    "0bb08332cf2f2c7cebb89c95a071662f3f1547831599e89d52e23abf2729e6d9": {
+      "address": "0x1355A5EB488769448fAEF3652E8F77Ec58Eb8C44",
+      "txHash": "0xfbe5c25f04482beeeb8f964b490dc3b8786b63e5d099316be39f98e3d4934ae3",
+      "layout": {
+        "solcVersion": "0.8.24",
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:67"
+          },
+          {
+            "label": "admin",
+            "offset": 2,
+            "slot": "0",
+            "type": "t_address",
+            "contract": "PriceFeedTracker",
+            "src": "contracts/PriceFeed.sol:8"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        },
+        "namespaces": {}
+      }
+    }
+  }
+}
