@@ -1,0 +1,2 @@
+const ERC20 = "0x0765CD8d378B92742588026953BC4829de9BC087";
+module.exports = [ERC20];
