@@ -1,0 +1,61 @@
+{
+  "manifestVersion": "3.2",
+  "proxies": [
+    {
+      "address": "0x7F6f39BE1f87C95f57958DE53dF94CfD82D3614F",
+      "txHash": "0xca2726bf002104e1315c19978fcbd4fc6e33c487de0c37f3db17a9fbe48268c4",
+      "kind": "transparent"
+    }
+  ],
+  "impls": {
+    "93d23c712814a9961f0bfe8256d6793a0ad0fe40149df23de8f4fafe06173f61": {
+      "address": "0xa9fcf1F4E5aA0e7ce367b3dA081dA1Ec2d464bD1",
+      "txHash": "0x2e2f51192ed1cb41467fcc201bd2cc0824b3267ecef2df9355a067703602beb1",
+      "layout": {
+        "solcVersion": "0.8.20",
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:67"
+          },
+          {
+            "label": "admin",
+            "offset": 2,
+            "slot": "0",
+            "type": "t_address",
+            "contract": "PriceFeedTracker",
+            "src": "contracts/PriceFeed.sol:8"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        },
+        "namespaces": {}
+      }
+    }
+  }
+}

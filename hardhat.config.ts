@@ -6,16 +6,29 @@ const config: HardhatUserConfig = {
   solidity: {
     compilers: [
       {
+        version: "0.8.19",
+      },
+      {
+        version: "0.8.20",
+      },
+      {
+        version: "0.8.22",
+      },
+      {
+        version: "0.8.23",
+      },
+      {
         version: "0.8.24",
-        settings: {
-          optimizer: {
-            enabled: true,
-            runs: 200,
-          },
-        },
       },
     ],
+    settings: {
+      optimizer: {
+        enabled: true,
+        runs: 200,
+      },
+    },
   },
+
   sourcify: {
     enabled: false,
   },
@@ -35,7 +48,7 @@ const config: HardhatUserConfig = {
 
   etherscan: {
     apiKey: {
-      polygonAmoy: process.env.OKLINK_AMOY_API as string,
+      polygonAmoy: process.env.ETHERSCAN_POLYGON_API as string,
       sepolia: process.env.SEPOLIA_API_KEY as string,
     },
     customChains: [
@@ -43,9 +56,8 @@ const config: HardhatUserConfig = {
         network: "polygonAmoy",
         chainId: 80002,
         urls: {
-          apiURL:
-            "https://www.oklink.com/api/explorer/v1/contract/verify/async/api/polygonAmoy",
-          browserURL: "https://www.oklink.com/polygonAmoy",
+          apiURL: "https://api-amoy.polygonscan.com/api",
+          browserURL: "https://amoy.polygonscan.com/",
         },
       },
     ],
